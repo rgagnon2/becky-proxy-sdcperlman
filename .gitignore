@@ -12,3 +12,7 @@ package-lock.json
 # Build files
 dist/*
 !dist/index.html
+
+# NewRelic
+newrelic.js
+newrelic_agent.log

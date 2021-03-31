@@ -1,0 +1,9 @@
+config:
+  target: "http://localhost:6002/buildings/00000"
+  phases: 
+    - duration: 10
+      arrivalRate: 1000
+scenarios:
+  - flow:
+    - get:
+        url: "/"

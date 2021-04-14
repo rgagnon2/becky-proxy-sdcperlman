@@ -53,7 +53,7 @@ const reviewInfo = createJsonController('http://ec2-184-169-176-177.us-west-1.co
 
 // Josh
 const description = createJsonController('http://54.151.43.93:6060/api/workspace-description');
-const photos = createJsonController('http://localhost:6001/api/photos'); //'http://54.151.43.93:6001/api/photos');
+const photos = createJsonController('http://ec2-18-237-197-107.us-west-2.compute.amazonaws.com:6001/buildings'); //'http://localhost:6001/api/photos'); //'http://54.151.43.93:6001/api/photos');
 const photosByWorkspace = createJsonController('http://localhost:6001/api/photos/workspace'); //'http://54.151.43.93:6001/api/photos/workspace');
 
 module.exports = {

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server": "node server/index.js",
-    "server:dev": "nodemon server/index.js"
+    "server:dev": "nodemon server/index.js",
+	"stress-test": "$(npm bin)/artillery run tests/artillery/proxy-test.yaml"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {
+    "artillery": "^1.6.2",
     "express": "^4.17.1",
+    "newrelic": "^7.3.0",
     "request": "^2.88.2"
   }
 }

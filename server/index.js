@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const request = require('request');
 const get = require('./controllers.js');
-
+require('newrelic');
 const app = express();
 
 app.use('/', express.static(path.join(__dirname, '../client/dist')));

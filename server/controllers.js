@@ -8,6 +8,7 @@ const createJsonController = endpoint => async (req, res) => {
   }
 
   const { id } = req.params;
+  //console.log(id);
   const options = {
     'method': 'GET',
     'uri': `${endpoint}${id}`,
@@ -18,6 +19,7 @@ const createJsonController = endpoint => async (req, res) => {
       res.sendStatus(500);
       return error;
     }
+    
     res.json(JSON.parse(body));
   });
 };

@@ -1,9 +1,13 @@
 config:
-  target: "http://localhost:6002/buildings/czzzu"
+  target: "http://localhost:6002/api/photos/workspace"
   phases: 
     - duration: 10
       arrivalRate: 1000
+  payload:
+    path: "workspaces.csv"
+    fields:
+      - "workspaceId"  
 scenarios:
   - flow:
     - get:
-        url: "/"
+        url: "/{{ workspaceId }}"
